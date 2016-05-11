@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr  9 13:47:41 2016
-
-@author: mac
-"""
-
 import copy
 import sys
 
@@ -169,21 +162,6 @@ def main():
     goal = input('Enter the goal number.')
     
     solution = solve(numbers, goal)
-
-    
-    
-#    if type(solution) == str:
-#        solution = stage2(numbers)
-#        if type(solution) != str:
-#            print 'This solution will result in goal = 0.'
-#        elif raw_input('Do you have a x2 tile? Enter y or n.') == 'y':
-#            solution = solverTimes2(numbers, goal)
-#        elif raw_input('Do you have a random tile? Enter y or n.') == 'y':
-#            numbers = [int(num)
-#                for num in
-#                raw_input('Change a number using the random title and enter the new list.').split()
-#                ]
-#            solution = solver(numbers, goal)
 
     print 'The solution is: {}. Dark is + and light is -.'.format(solution)
 
